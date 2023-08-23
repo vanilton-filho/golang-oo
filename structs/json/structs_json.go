@@ -6,9 +6,9 @@ import (
 )
 
 type Car struct {
-	Name  string
-	Year  int
-	color string
+	Name  string `json:"name"`
+	Year  int    `json:"-"`
+	Color string
 }
 
 func main() {
