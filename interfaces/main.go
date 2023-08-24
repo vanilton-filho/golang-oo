@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type vehicle interface {
 	start() string
 }
@@ -26,11 +24,11 @@ func startVehicle(v vehicle) string {
 	return v.start()
 }
 
-func main() {
-	c := car{"Gol"}
-	m := motorcycle{"Broz"}
+// func main() {
+// 	c := car{"Gol"}
+// 	m := motorcycle{"Broz"}
 
-	fmt.Println(startVehicle(c))
-	fmt.Println(startVehicle(m))
+// 	fmt.Println(startVehicle(c))
+// 	fmt.Println(startVehicle(m))
 
-}
+// }
