@@ -13,9 +13,10 @@ type Car struct {
 
 func main() {
 
-	car := Car{"Gol", 2017, "Yellow"}
+	var car Car
+	data := []byte(`{"name": "Gol", "Color": "Black"}`)
 
-	result, _ := json.Marshal(car)
-	fmt.Println(string(result))
+	json.Unmarshal(data, &car)
+	fmt.Println(car.Name, car.Year, car.Color)
 
 }
